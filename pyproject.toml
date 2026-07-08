@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agent-pack"
+name = "skillpack"
 version = "0.1.0"
 description = "Write your agent skills once, ship them everywhere: Cursor, Claude Code, Codex, GitHub Copilot and any SKILL.md-compatible agent."
 readme = "README.md"
