@@ -1,5 +1,7 @@
 # agentpack
 
+**English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+
 **Write your agent skills once. Ship them everywhere.**
 
 Every AI coding agent invented its own plugin layout: Cursor reads `.cursor/skills/`, Claude Code reads `.claude-plugin/` + `skills/`, Codex reads `.codex/skills/`, GitHub Copilot reads `.github/skills/`, and the vendor-neutral standard uses `.agents/skills/`. If you maintain a skill pack or plugin, you end up hand-maintaining five slightly different copies of the same content.
@@ -134,31 +136,3 @@ No dependencies needed, for tests either.
 ## License
 
 MIT
-
----
-
-# agentpack（中文说明）
-
-**技能只写一份，发布到所有 AI 编程助手。**
-
-每个 AI 编程助手都发明了自己的插件目录：Cursor 读 `.cursor/skills/`，Claude Code 读 `.claude-plugin/` + `skills/`，Codex 读 `.codex/skills/`，GitHub Copilot 读 `.github/skills/`，通用标准又是 `.agents/skills/`。维护一个技能包意味着手工同步五份几乎一样的内容。
-
-agentpack 是"agent 插件界的 Babel"：你只维护**一份**源文件（若干 `SKILL.md` + 一个 `agentpack.yaml`），一条命令生成所有平台可直接发布的产物，包括 Claude Code 的 `plugin.json` 和 `marketplace.json`。
-
-- **零依赖**，纯 Python 标准库；
-- **先校验后构建**，提前发现缺 description、名字与文件夹不一致等会让技能"隐身"的问题；
-- **懂各平台方言**：不支持的 frontmatter 字段自动剔除并提示，`globs` 自动映射为 Cursor 的 `paths`，斜杠命令在没有 commands 目录的平台自动转成手动触发的技能；
-- **Windows 友好**，三平台 CI 测试。
-
-## 快速开始
-
-```bash
-pip install agentpack
-agentpack init my-toolkit --name my-toolkit
-cd my-toolkit
-# 编辑 agentpack.yaml 和 skills/example-skill/SKILL.md 后：
-agentpack validate
-agentpack build
-```
-
-构建产物在 `dist/` 下按平台分目录，直接拷进你的仓库即可发布。完整示例见 `examples/code-review-toolkit/`。
