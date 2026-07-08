@@ -16,7 +16,7 @@ agentpack は「エージェントプラグインのための Babel」です。`
 ## インストール
 
 ```bash
-pip install agentpack
+pip install agent-pack   # `agentpack` コマンドがインストールされます
 # またはソースから：
 git clone https://github.com/superman2003/agentpack && cd agentpack && pip install .
 ```

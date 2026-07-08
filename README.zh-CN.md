@@ -16,7 +16,7 @@ agentpack 是"agent 插件界的 Babel"：你只维护**一份**源文件——�
 ## 安装
 
 ```bash
-pip install agentpack
+pip install agent-pack   # 安装后命令名仍是 agentpack
 # 或从源码安装：
 git clone https://github.com/superman2003/agentpack && cd agentpack && pip install .
 ```
