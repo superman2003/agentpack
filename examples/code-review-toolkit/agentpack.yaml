@@ -1,0 +1,22 @@
+# Example agentpack project: a small code-review toolkit.
+# Build it with:  agentpack build examples/code-review-toolkit
+
+name: code-review-toolkit
+version: 1.0.0
+description: Skills that teach coding agents to review pull requests methodically and write useful commit messages.
+
+author:
+  name: agentpack examples
+  url: https://github.com/superman2003/agentpack
+
+license: MIT
+keywords:
+  - code-review
+  - git
+
+targets:
+  - claude
+  - cursor
+  - codex
+  - copilot
+  - agents
