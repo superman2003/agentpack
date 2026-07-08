@@ -1,5 +1,8 @@
 # agentpack
 
+[![CI](https://github.com/superman2003/agentpack/actions/workflows/ci.yml/badge.svg)](https://github.com/superman2003/agentpack/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/shipskills)](https://pypi.org/project/shipskills/)
+
 [English](README.md) | **简体中文** | [日本語](README.ja.md)
 
 **技能只写一份，发布到所有 AI 编程助手。**

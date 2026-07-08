@@ -1,5 +1,8 @@
 # agentpack
 
+[![CI](https://github.com/superman2003/agentpack/actions/workflows/ci.yml/badge.svg)](https://github.com/superman2003/agentpack/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/shipskills)](https://pypi.org/project/shipskills/)
+
 **English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
 **Write your agent skills once. Ship them everywhere.**
