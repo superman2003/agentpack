@@ -16,7 +16,7 @@ agentpack is a Babel for agent plugins: you keep **one** source of truth — a f
 ## Install
 
 ```bash
-pip install skillpack   # installs the `agentpack` command
+pip install shipskills   # installs the `agentpack` command
 # or from source:
 git clone https://github.com/superman2003/agentpack && cd agentpack && pip install .
 ```
