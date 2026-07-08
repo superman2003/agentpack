@@ -84,6 +84,7 @@ def scaffold_project(root: Path, name: Optional[str] = None, force: bool = False
     created: List[Path] = []
     for path, content in files.items():
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(content, encoding="utf-8", newline="\n")
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(content)
         created.append(path)
     return created

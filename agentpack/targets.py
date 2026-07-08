@@ -48,7 +48,8 @@ class BuildResult:
 
 def _write_text(result: BuildResult, path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8", newline="\n")
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(text)
     result.wrote(path)
 
 
